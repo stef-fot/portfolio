@@ -41,7 +41,7 @@
     <div><dt>ROLE</dt><dd>Embedded Software Engineer</dd></div>
     <div><dt>STACK</dt><dd>STM32, FreeRTOS, C</dd></div>
     <div><dt>LOCATION</dt><dd>Athens, Greece</dd></div>
-    <div><dt>EXPERIENCE</dt><dd>6 months firmware + 1 month software internship</dd></div>
+    <div><dt>EXPERIENCE</dt><dd>6 months firmware + 2 months software internship</dd></div>
     <div><dt>AVAILABILITY</dt><dd>Available now</dd></div>
     <div><dt>LANGUAGES</dt><dd>Greek (native), English (C1), German (A2)</dd></div>
   </dl>
@@ -94,7 +94,7 @@
     <li>
       <p class="mono when">Jul 2024 to Aug 2024</p>
       <div>
-        <h3>Software Engineer (Internship), Neunen</h3>
+        <h3>Software Engineer (2-month internship), Neunen</h3>
         <p class="mono meta">Athens, Greece</p>
         <ul>
           <li>Built and maintained application features with React, TypeScript and Java, following established coding and code review practices.</li>
@@ -109,36 +109,49 @@
 
 <section id="projects">
   <h2><span class="mono pin">PIN 03</span> Projects</h2>
+  <p class="mono showcase">Pinned on GitHub: github.com/stef-fot</p>
   <div class="projects">
     <article>
       <p class="mono ref">REF 03.1</p>
       <h3>USB-C Power Delivery Controller</h3>
-      <p class="mono tags">Diploma thesis | Embedded C | STM32G474</p>
-      <ul>
-        <li>Implemented USB-C Power Delivery contract negotiation between a source and a sink, with 5 V, 9 V and 12 V selected on a joystick and confirmed by an LED.</li>
-        <li>Event-driven firmware with real-time voltage and current monitoring, and protection against over-voltage, under-voltage and excess current. Behaviour validated in MATLAB/Simulink before hardware bring-up.</li>
-      </ul>
+      <p class="desc">USB-C Power Delivery on the STM32G474 in C with FreeRTOS and the ST USB-PD stack. Choose 5V, 9V or 12V with the joystick, the board negotiates the power contract over the CC lines and an LED confirms it. Diploma thesis project.</p>
+      <p class="mono tags">C | FreeRTOS | STM32G474 | USB-PD</p>
       <p class="mono more"><a href="https://github.com/stef-fot/PowerDeliveryProject_Diploma" rel="noopener">View on GitHub</a></p>
     </article>
     <article>
       <p class="mono ref">REF 03.2</p>
-      <h3>Pioneer P3-DX Trajectory Control</h3>
-      <p class="mono tags">Robotics | ROS | Gazebo | Python | MATLAB</p>
-      <ul>
-        <li>Drove a simulated mobile robot through a three-point path in five phases (rotate, translate, rotate, translate, rotate) under hard speed limits of 0.2 m/s and 40 deg/s.</li>
-        <li>Generated each phase as a cubic polynomial with zero velocity at both ends, removing the jerk of constant-speed moves. Coefficients checked in MATLAB, then verified in Gazebo against recorded odometry. Two-person team project.</li>
-      </ul>
-      <p class="mono more"><a href="https://github.com/stef-fot/Robotics" rel="noopener">View on GitHub</a></p>
+      <h3>Thesis Management System</h3>
+      <p class="desc">A full-stack Spring Boot web application for university thesis management, featuring role-based authentication, subject application workflows, strategy-based thesis assignment, and grading management using MySQL and Spring Security.</p>
+      <p class="mono tags">Java | Spring Boot | Spring Security | MySQL</p>
+      <p class="mono more"><a href="https://github.com/stef-fot/thesis-management-system" rel="noopener">View on GitHub</a></p>
     </article>
     <article>
       <p class="mono ref">REF 03.3</p>
-      <h3>Skyhop</h3>
-      <p class="mono tags">Kotlin | Swift | Jetpack Compose | SwiftUI</p>
-      <ul>
-        <li>A Flappy Bird style game built natively twice, with a pure engine module (no UI imports) and one shared physics and test suite on both platforms.</li>
-        <li>Ran the real Kotlin and Swift engines on the same seeded level, frame by frame: scores and crash time match, and the bird position differs by less than 0.003 px.</li>
-      </ul>
-      <p class="mono more"><a href="https://github.com/stef-fot/skyhop" rel="noopener">View on GitHub</a></p>
+      <h3>Emotions Detection</h3>
+      <p class="desc">AI-powered web app that detects emotions from customer feedback text using IBM Watson NLP and Flask.</p>
+      <p class="mono tags">Python | Flask | IBM Watson NLP</p>
+      <p class="mono more"><a href="https://github.com/stef-fot/Emotions-Detection" rel="noopener">View on GitHub</a></p>
+    </article>
+    <article>
+      <p class="mono ref">REF 03.4</p>
+      <h3>CryptoPulse</h3>
+      <p class="desc">Real-time crypto price tracker built natively twice: Kotlin + Coroutines/Flow + Compose (Android) and Swift + async/await + SwiftUI (iOS), live Binance WebSocket.</p>
+      <p class="mono tags">Kotlin | Swift | Compose | SwiftUI | WebSocket</p>
+      <p class="mono more"><a href="https://github.com/stef-fot/cryptopulse" rel="noopener">View on GitHub</a></p>
+    </article>
+    <article>
+      <p class="mono ref">REF 03.5</p>
+      <h3>cutePy Compiler</h3>
+      <p class="desc">Compiler for cutePy, a Python-like teaching language: lexer, recursive descent parser, intermediate code (quads) and symbol table.</p>
+      <p class="mono tags">Python | Lexer | Parser | Intermediate code</p>
+      <p class="mono more"><a href="https://github.com/stef-fot/cutePy" rel="noopener">View on GitHub</a></p>
+    </article>
+    <article>
+      <p class="mono ref">REF 03.6</p>
+      <h3>Pioneer P3-DX Trajectory Control</h3>
+      <p class="desc">A ROS control node that drives a simulated Pioneer P3-DX mobile robot through a three-point trajectory using cubic-polynomial motion profiles, validated in Gazebo and verified against recorded odometry data.</p>
+      <p class="mono tags">ROS | Gazebo | Python | MATLAB</p>
+      <p class="mono more"><a href="https://github.com/stef-fot/Robotics" rel="noopener">View on GitHub</a></p>
     </article>
   </div>
 </section>
@@ -194,6 +207,13 @@
       <div>
         <h3>Military service</h3>
         <p class="mono meta">Completed</p>
+      </div>
+    </li>
+    <li>
+      <p class="mono when">Licence</p>
+      <div>
+        <h3>Driving licence</h3>
+        <p class="mono meta">Car driving licence held</p>
       </div>
     </li>
   </ol>

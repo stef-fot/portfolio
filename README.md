@@ -12,10 +12,10 @@ Static site (HTML, CSS, vanilla JavaScript). No build step, no dependencies.
 |---|---|---|
 | **Hero** | Name, one-line pitch, animated oscilloscope trace, fact sheet (role, stack, location, experience, availability, languages), buttons for email, LinkedIn, GitHub and CV | Recruiters: the essentials in 10 seconds |
 | **PIN 01 Profile** | Short profile and three measurable results | Everyone |
-| **PIN 02 Experience** | IQSoft Greece (Embedded Software Engineer) and Neunen (internship), with concrete numbers | Engineering managers |
-| **PIN 03 Projects** | USB-C Power Delivery Controller (STM32G474), Pioneer P3-DX trajectory control (ROS), Skyhop (Kotlin and Swift), each linked to its repository | Technical reviewers |
+| **PIN 02 Experience** | IQSoft Greece (Embedded Software Engineer) and Neunen (2-month internship), with concrete numbers | Engineering managers |
+| **PIN 03 Projects** | A showcase of the 6 repositories pinned on GitHub, with their descriptions: USB-C Power Delivery (STM32G474), Thesis Management System, Emotions Detection, CryptoPulse, cutePy compiler, Pioneer P3-DX trajectory control | Technical reviewers |
 | **PIN 04 Skills** | A register-map style table (offset, name, value) | Quick skim of the stack |
-| **PIN 05 Education** | Integrated Master's at the University of Ioannina, certifications, military service | Recruiters |
+| **PIN 05 Education** | Integrated Master's at the University of Ioannina, certifications, military service, driving licence | Recruiters |
 | **PIN 06 Contact** | Email, LinkedIn, GitHub, CV download | Everyone |
 
 ### Details that reward a closer look
