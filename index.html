@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stefanos Fotopoulos, Embedded Engineer</title>
+<meta name="description" content="Stefanos Fotopoulos. Embedded, firmware and motor control engineer. Datasheet-style CV with experience, projects and contact.">
+<meta name="theme-color" content="#f1eee6">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2316181a'/%3E%3Cpath d='M2 18h6l3-10 4 16 3-12 2 6h10' fill='none' stroke='%23b7e34a' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+  try { var t = localStorage.getItem('theme'); if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+
+<header class="bar">
+  <span class="mono">DS-001 / REV 2026.10</span>
+  <nav class="mono" aria-label="Sections">
+    <a href="#profile">01</a><a href="#experience">02</a><a href="#projects">03</a><a href="#skills">04</a><a href="#education">05</a><a href="#contact">06</a>
+  </nav>
+  <button id="theme" class="mono" type="button" aria-label="Toggle light and dark theme">THEME</button>
+</header>
+
+<main>
+<section class="hero" id="top">
+  <p class="mono label">PART NO. SF-0001 &nbsp;|&nbsp; PACKAGE: HUMAN &nbsp;|&nbsp; STATUS: <span class="status">AVAILABLE</span></p>
+  <h1>Stefanos<br><em>Fotopoulos</em></h1>
+  <p class="lede">Embedded, firmware and motor control engineer. I make hardware behave, and I can show the measurements.</p>
+
+  <div class="scope" aria-hidden="true">
+    <canvas id="scope"></canvas>
+    <span class="mono scope-l tl">CH1 1.00 V/div</span>
+    <span class="mono scope-l br">1.00 ms/div</span>
+  </div>
+
+  <dl class="facts mono">
+    <div><dt>ROLE</dt><dd>Embedded / Firmware Engineer</dd></div>
+    <div><dt>FOCUS</dt><dd>Motor control, test, bring-up</dd></div>
+    <div><dt>LOCATION</dt><dd><span class="todo">[City, Greece]</span></dd></div>
+    <div><dt>EXPERIENCE</dt><dd><span class="todo">[X years]</span></dd></div>
+    <div><dt>AVAILABILITY</dt><dd><span class="todo">[Immediate / notice period]</span></dd></div>
+    <div><dt>LANGUAGES</dt><dd><span class="todo">[Greek, English]</span></dd></div>
+  </dl>
+
+  <p class="cta">
+    <a class="btn" href="mailto:stefatbc@gmail.com">stefatbc@gmail.com</a>
+    <a class="btn ghost" href="https://www.linkedin.com/in/stefanos-fotopoulos-95192a290/" rel="noopener">LinkedIn</a>
+    <a class="btn ghost" href="cv.pdf">Download CV (PDF)</a>
+  </p>
+</section>
+
+<svg class="trace" viewBox="0 0 1200 24" preserveAspectRatio="none" aria-hidden="true"><path d="M0 12H380l12-10h120l12 10H1200" /><circle cx="380" cy="12" r="3"/><circle cx="524" cy="12" r="3"/></svg>
+
+<section id="profile">
+  <h2><span class="mono pin">PIN 01</span> Profile</h2>
+  <div class="cols">
+    <p class="big">
+      <span class="todo">[Two or three sentences in plain language: what you build, on which hardware, and one measurable result. Example shape: "I write firmware for X on Y, and cut Z by N percent."]</span>
+    </p>
+    <ul class="ticks mono">
+      <li><span class="todo">[Headline metric 1, e.g. "N boards brought up"]</span></li>
+      <li><span class="todo">[Headline metric 2, e.g. "loop time from A to B"]</span></li>
+      <li><span class="todo">[Headline metric 3]</span></li>
+    </ul>
+  </div>
+</section>
+
+<svg class="trace" viewBox="0 0 1200 24" preserveAspectRatio="none" aria-hidden="true"><path d="M0 12H760l12 10h120l12-10H1200" /><circle cx="760" cy="12" r="3"/><circle cx="904" cy="12" r="3"/></svg>
+
+<section id="experience">
+  <h2><span class="mono pin">PIN 02</span> Experience</h2>
+  <ol class="log">
+    <li>
+      <p class="mono when"><span class="todo">[MM/YYYY to Present]</span></p>
+      <div>
+        <h3><span class="todo">[Job title]</span>, <span class="todo">[Company]</span></h3>
+        <p class="mono meta"><span class="todo">[Location]</span></p>
+        <ul>
+          <li><span class="todo">[Concrete result: what, on which MCU or system, with which number.]</span></li>
+          <li><span class="todo">[Protocols, RTOS or tools used, and what they enabled.]</span></li>
+          <li><span class="todo">[Debugging or validation story with an outcome.]</span></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <p class="mono when"><span class="todo">[MM/YYYY to MM/YYYY]</span></p>
+      <div>
+        <h3><span class="todo">[Previous title]</span>, <span class="todo">[Company]</span></h3>
+        <p class="mono meta"><span class="todo">[Location]</span></p>
+        <ul>
+          <li><span class="todo">[Result with a number.]</span></li>
+          <li><span class="todo">[Result with a number.]</span></li>
+        </ul>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<svg class="trace" viewBox="0 0 1200 24" preserveAspectRatio="none" aria-hidden="true"><path d="M0 12H220l12-10h120l12 10H1200" /><circle cx="220" cy="12" r="3"/><circle cx="364" cy="12" r="3"/></svg>
+
+<section id="projects">
+  <h2><span class="mono pin">PIN 03</span> Projects</h2>
+  <div class="projects">
+    <article>
+      <p class="mono ref">REF 03.1</p>
+      <h3><span class="todo">[Project name]</span></h3>
+      <p><span class="todo">[One paragraph: the problem, your part, the outcome with a number.]</span></p>
+      <p class="mono tags"><span class="todo">[MCU] [RTOS] [Protocol] [Tool]</span></p>
+      <p class="mono"><a href="#" class="todo">[repo or write-up link]</a></p>
+    </article>
+    <article>
+      <p class="mono ref">REF 03.2</p>
+      <h3><span class="todo">[Project name]</span></h3>
+      <p><span class="todo">[One paragraph: the problem, your part, the outcome with a number.]</span></p>
+      <p class="mono tags"><span class="todo">[MCU] [RTOS] [Protocol] [Tool]</span></p>
+      <p class="mono"><a href="#" class="todo">[repo or write-up link]</a></p>
+    </article>
+    <article>
+      <p class="mono ref">REF 03.3</p>
+      <h3><span class="todo">[Project name]</span></h3>
+      <p><span class="todo">[One paragraph: the problem, your part, the outcome with a number.]</span></p>
+      <p class="mono tags"><span class="todo">[MCU] [RTOS] [Protocol] [Tool]</span></p>
+      <p class="mono"><a href="#" class="todo">[repo or write-up link]</a></p>
+    </article>
+  </div>
+</section>
+
+<svg class="trace" viewBox="0 0 1200 24" preserveAspectRatio="none" aria-hidden="true"><path d="M0 12H640l12 10h120l12-10H1200" /><circle cx="640" cy="12" r="3"/><circle cx="784" cy="12" r="3"/></svg>
+
+<section id="skills">
+  <h2><span class="mono pin">PIN 04</span> Skills</h2>
+  <table class="regs mono">
+    <thead><tr><th>OFFSET</th><th>REGISTER</th><th>VALUE</th></tr></thead>
+    <tbody>
+      <tr><td>0x00</td><td>MCU_FAMILIES</td><td><span class="todo">[STM32, NXP, TI C2000, ...]</span></td></tr>
+      <tr><td>0x04</td><td>LANGUAGES</td><td><span class="todo">[C, C++, Python, ...]</span></td></tr>
+      <tr><td>0x08</td><td>RTOS</td><td><span class="todo">[FreeRTOS, Zephyr, ...]</span></td></tr>
+      <tr><td>0x0C</td><td>PROTOCOLS</td><td><span class="todo">[CAN, SPI, I2C, UART, ...]</span></td></tr>
+      <tr><td>0x10</td><td>MOTOR_CONTROL</td><td><span class="todo">[FOC, BLDC, PMSM, ...]</span></td></tr>
+      <tr><td>0x14</td><td>DEBUG_TEST</td><td><span class="todo">[Oscilloscope, logic analyzer, JTAG/SWD, HIL, ...]</span></td></tr>
+      <tr><td>0x18</td><td>TOOLCHAIN</td><td><span class="todo">[Git, CI, CMake, ...]</span></td></tr>
+    </tbody>
+  </table>
+</section>
+
+<svg class="trace" viewBox="0 0 1200 24" preserveAspectRatio="none" aria-hidden="true"><path d="M0 12H480l12-10h120l12 10H1200" /><circle cx="480" cy="12" r="3"/><circle cx="624" cy="12" r="3"/></svg>
+
+<section id="education">
+  <h2><span class="mono pin">PIN 05</span> Education</h2>
+  <ol class="log">
+    <li>
+      <p class="mono when"><span class="todo">[YYYY to YYYY]</span></p>
+      <div>
+        <h3><span class="todo">[Degree]</span>, <span class="todo">[University]</span></h3>
+        <p class="mono meta"><span class="todo">[Thesis or notable coursework, certifications]</span></p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<svg class="trace" viewBox="0 0 1200 24" preserveAspectRatio="none" aria-hidden="true"><path d="M0 12H900l12 10h120l12-10H1200" /><circle cx="900" cy="12" r="3"/><circle cx="1044" cy="12" r="3"/></svg>
+
+<section id="contact">
+  <h2><span class="mono pin">PIN 06</span> Contact</h2>
+  <p class="big">Hiring for embedded, firmware, motor control or test? Write to me.</p>
+  <p class="cta">
+    <a class="btn" href="mailto:stefatbc@gmail.com">stefatbc@gmail.com</a>
+    <a class="btn ghost" href="https://www.linkedin.com/in/stefanos-fotopoulos-95192a290/" rel="noopener">LinkedIn</a>
+  </p>
+</section>
+</main>
+
+<footer class="mono">
+  <span>SF-0001 / END OF DATASHEET</span>
+  <span>&copy; 2026 Stefanos Fotopoulos</span>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
