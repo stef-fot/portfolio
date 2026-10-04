@@ -121,6 +121,9 @@ h3 { font-weight: 500; font-size: 24px; line-height: 1.2; margin: 0 0 4px; }
 
 .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0; border-top: 1px solid var(--ink); }
 .projects article { padding: 24px 28px 28px 0; border-bottom: 1px solid var(--rule); }
+.projects ul { margin: 0; padding-left: 1.1em; font-size: 16px; }
+.projects li::marker { color: var(--accent); }
+.projects .more { margin: 16px 0 0; }
 .projects article + article { padding-left: 28px; border-left: 1px solid var(--rule); }
 .ref { color: var(--accent); margin: 0 0 12px; }
 .tags { color: var(--muted); }
@@ -131,15 +134,13 @@ h3 { font-weight: 500; font-size: 24px; line-height: 1.2; margin: 0 0 4px; }
 .regs td:first-child { color: var(--accent); width: 90px; }
 .regs td:nth-child(2) { width: 220px; }
 
-/* placeholders: deliberately loud so nothing ships unfilled */
-.todo { background: repeating-linear-gradient(135deg, transparent 0 6px, color-mix(in srgb, var(--accent) 14%, transparent) 6px 12px); outline: 1px dashed var(--accent); outline-offset: 1px; }
 
 footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; padding-block: 32px 48px; margin-top: 40px; border-top: 1px solid var(--ink); color: var(--muted); max-width: 1120px; }
 
 @media (max-width: 760px) {
   .bar nav { display: none; }
   .cols, .log > li { grid-template-columns: 1fr; gap: 16px; }
-  .projects article + article { padding-left: 0; border-left: 0; }
+.projects article + article { padding-left: 0; border-left: 0; }
   .regs td:nth-child(2) { width: auto; }
   .regs td:first-child { display: none; } .regs th:first-child { display: none; }
   h1 em { margin-left: 0; }

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Stefanos Fotopoulos, Embedded Engineer</title>
-<meta name="description" content="Stefanos Fotopoulos. Embedded, firmware and motor control engineer. Datasheet-style CV with experience, projects and contact.">
+<title>Stefanos Fotopoulos, Embedded Software Engineer</title>
+<meta name="description" content="Stefanos Fotopoulos. Embedded Software Engineer in Athens. STM32, FreeRTOS, motor control and hardware debugging. Experience, projects and contact.">
 <meta name="theme-color" content="#f1eee6">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2316181a'/%3E%3Cpath d='M2 18h6l3-10 4 16 3-12 2 6h10' fill='none' stroke='%23b7e34a' stroke-width='2'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,9 +27,9 @@
 
 <main>
 <section class="hero" id="top">
-  <p class="mono label">PART NO. SF-0001 &nbsp;|&nbsp; PACKAGE: HUMAN &nbsp;|&nbsp; STATUS: <span class="status">AVAILABLE</span></p>
+  <p class="mono label">PART NO. SF-0001 &nbsp;|&nbsp; PACKAGE: ATHENS, GR &nbsp;|&nbsp; STATUS: <span class="status">AVAILABLE</span></p>
   <h1>Stefanos<br><em>Fotopoulos</em></h1>
-  <p class="lede">Embedded, firmware and motor control engineer. I make hardware behave, and I can show the measurements.</p>
+  <p class="lede">Embedded software engineer. I make hardware behave, and I can show the measurements.</p>
 
   <div class="scope" aria-hidden="true">
     <canvas id="scope"></canvas>
@@ -38,17 +38,18 @@
   </div>
 
   <dl class="facts mono">
-    <div><dt>ROLE</dt><dd>Embedded / Firmware Engineer</dd></div>
-    <div><dt>FOCUS</dt><dd>Motor control, test, bring-up</dd></div>
-    <div><dt>LOCATION</dt><dd><span class="todo">[City, Greece]</span></dd></div>
-    <div><dt>EXPERIENCE</dt><dd><span class="todo">[X years]</span></dd></div>
-    <div><dt>AVAILABILITY</dt><dd><span class="todo">[Immediate / notice period]</span></dd></div>
-    <div><dt>LANGUAGES</dt><dd><span class="todo">[Greek, English]</span></dd></div>
+    <div><dt>ROLE</dt><dd>Embedded Software Engineer</dd></div>
+    <div><dt>STACK</dt><dd>STM32, FreeRTOS, C</dd></div>
+    <div><dt>LOCATION</dt><dd>Athens, Greece</dd></div>
+    <div><dt>EXPERIENCE</dt><dd>6 months firmware + 1 month software internship</dd></div>
+    <div><dt>AVAILABILITY</dt><dd>Available now</dd></div>
+    <div><dt>LANGUAGES</dt><dd>Greek (native), English (C1), German (A2)</dd></div>
   </dl>
 
   <p class="cta">
-    <a class="btn" href="mailto:stefatbc@gmail.com">stefatbc@gmail.com</a>
+    <a class="btn" href="mailto:stefanos.fotop@gmail.com">stefanos.fotop@gmail.com</a>
     <a class="btn ghost" href="https://www.linkedin.com/in/stefanos-fotopoulos-95192a290/" rel="noopener">LinkedIn</a>
+    <a class="btn ghost" href="https://github.com/stef-fot" rel="noopener">GitHub</a>
     <a class="btn ghost" href="cv.pdf">Download CV (PDF)</a>
   </p>
 </section>
@@ -59,12 +60,12 @@
   <h2><span class="mono pin">PIN 01</span> Profile</h2>
   <div class="cols">
     <p class="big">
-      <span class="todo">[Two or three sentences in plain language: what you build, on which hardware, and one measurable result. Example shape: "I write firmware for X on Y, and cut Z by N percent."]</span>
+      I write, test and debug embedded C firmware for STM32 microcontrollers, and I verify it on the bench with an oscilloscope and a logic analyser. Integrated Master's in Electrical and Computer Engineering, 4th in my class.
     </p>
     <ul class="ticks mono">
-      <li><span class="todo">[Headline metric 1, e.g. "N boards brought up"]</span></li>
-      <li><span class="todo">[Headline metric 2, e.g. "loop time from A to B"]</span></li>
-      <li><span class="todo">[Headline metric 3]</span></li>
+      <li>3 product modules taken from requirement to hardware validation</li>
+      <li>Control-loop worst-case latency under 20 ms on FreeRTOS</li>
+      <li>Debug cycle shortened by 30% with unit tests during bring-up</li>
     </ul>
   </div>
 </section>
@@ -75,25 +76,29 @@
   <h2><span class="mono pin">PIN 02</span> Experience</h2>
   <ol class="log">
     <li>
-      <p class="mono when"><span class="todo">[MM/YYYY to Present]</span></p>
+      <p class="mono when">Feb 2025 to Jul 2025</p>
       <div>
-        <h3><span class="todo">[Job title]</span>, <span class="todo">[Company]</span></h3>
-        <p class="mono meta"><span class="todo">[Location]</span></p>
+        <h3>Embedded Software Engineer, IQSoft Greece</h3>
+        <p class="mono meta">Athens, Greece</p>
         <ul>
-          <li><span class="todo">[Concrete result: what, on which MCU or system, with which number.]</span></li>
-          <li><span class="todo">[Protocols, RTOS or tools used, and what they enabled.]</span></li>
-          <li><span class="todo">[Debugging or validation story with an outcome.]</span></li>
+          <li>Wrote, tested and documented embedded C firmware for STM32 (ARM Cortex-M), delivering features across 3 product modules from requirement through to hardware validation.</li>
+          <li>Debugged firmware and hardware issues with an oscilloscope, logic analyser and multimeter, diagnosing timing, signal integrity and protocol faults across I2C, SPI and UART.</li>
+          <li>Implemented multithreaded task scheduling and prioritisation on FreeRTOS, reducing worst-case latency in time-critical control loops to under 20 ms.</li>
+          <li>Developed Bluetooth wireless serial communication for real-time data exchange between embedded devices and host applications, sustaining stable throughput at 100 kbps.</li>
+          <li>Designed and tuned closed-loop control algorithms for stepper and servo motors, improving positioning accuracy and reducing settling time by 20%.</li>
+          <li>Wrote unit tests and applied structured testing during hardware bring-up, shortening the debug cycle by 30%.</li>
+          <li>Worked with senior engineers in an Agile workflow, managing code in Git and reporting progress in regular team reviews.</li>
         </ul>
       </div>
     </li>
     <li>
-      <p class="mono when"><span class="todo">[MM/YYYY to MM/YYYY]</span></p>
+      <p class="mono when">Jul 2024 to Aug 2024</p>
       <div>
-        <h3><span class="todo">[Previous title]</span>, <span class="todo">[Company]</span></h3>
-        <p class="mono meta"><span class="todo">[Location]</span></p>
+        <h3>Software Engineer (Internship), Neunen</h3>
+        <p class="mono meta">Athens, Greece</p>
         <ul>
-          <li><span class="todo">[Result with a number.]</span></li>
-          <li><span class="todo">[Result with a number.]</span></li>
+          <li>Built and maintained application features with React, TypeScript and Java, following established coding and code review practices.</li>
+          <li>Implemented backend services and RESTful APIs, then validated and documented endpoints with Postman to catch integration defects before release.</li>
         </ul>
       </div>
     </li>
@@ -107,24 +112,33 @@
   <div class="projects">
     <article>
       <p class="mono ref">REF 03.1</p>
-      <h3><span class="todo">[Project name]</span></h3>
-      <p><span class="todo">[One paragraph: the problem, your part, the outcome with a number.]</span></p>
-      <p class="mono tags"><span class="todo">[MCU] [RTOS] [Protocol] [Tool]</span></p>
-      <p class="mono"><a href="#" class="todo">[repo or write-up link]</a></p>
+      <h3>USB-C Power Delivery Controller</h3>
+      <p class="mono tags">Diploma thesis | Embedded C | STM32G474</p>
+      <ul>
+        <li>Implemented USB-C Power Delivery contract negotiation between a source and a sink, with 5 V, 9 V and 12 V selected on a joystick and confirmed by an LED.</li>
+        <li>Event-driven firmware with real-time voltage and current monitoring, and protection against over-voltage, under-voltage and excess current. Behaviour validated in MATLAB/Simulink before hardware bring-up.</li>
+      </ul>
+      <p class="mono more"><a href="https://github.com/stef-fot/PowerDeliveryProject_Diploma" rel="noopener">View on GitHub</a></p>
     </article>
     <article>
       <p class="mono ref">REF 03.2</p>
-      <h3><span class="todo">[Project name]</span></h3>
-      <p><span class="todo">[One paragraph: the problem, your part, the outcome with a number.]</span></p>
-      <p class="mono tags"><span class="todo">[MCU] [RTOS] [Protocol] [Tool]</span></p>
-      <p class="mono"><a href="#" class="todo">[repo or write-up link]</a></p>
+      <h3>Pioneer P3-DX Trajectory Control</h3>
+      <p class="mono tags">Robotics | ROS | Gazebo | Python | MATLAB</p>
+      <ul>
+        <li>Drove a simulated mobile robot through a three-point path in five phases (rotate, translate, rotate, translate, rotate) under hard speed limits of 0.2 m/s and 40 deg/s.</li>
+        <li>Generated each phase as a cubic polynomial with zero velocity at both ends, removing the jerk of constant-speed moves. Coefficients checked in MATLAB, then verified in Gazebo against recorded odometry. Two-person team project.</li>
+      </ul>
+      <p class="mono more"><a href="https://github.com/stef-fot/Robotics" rel="noopener">View on GitHub</a></p>
     </article>
     <article>
       <p class="mono ref">REF 03.3</p>
-      <h3><span class="todo">[Project name]</span></h3>
-      <p><span class="todo">[One paragraph: the problem, your part, the outcome with a number.]</span></p>
-      <p class="mono tags"><span class="todo">[MCU] [RTOS] [Protocol] [Tool]</span></p>
-      <p class="mono"><a href="#" class="todo">[repo or write-up link]</a></p>
+      <h3>Skyhop</h3>
+      <p class="mono tags">Kotlin | Swift | Jetpack Compose | SwiftUI</p>
+      <ul>
+        <li>A Flappy Bird style game built natively twice, with a pure engine module (no UI imports) and one shared physics and test suite on both platforms.</li>
+        <li>Ran the real Kotlin and Swift engines on the same seeded level, frame by frame: scores and crash time match, and the bird position differs by less than 0.003 px.</li>
+      </ul>
+      <p class="mono more"><a href="https://github.com/stef-fot/skyhop" rel="noopener">View on GitHub</a></p>
     </article>
   </div>
 </section>
@@ -136,13 +150,14 @@
   <table class="regs mono">
     <thead><tr><th>OFFSET</th><th>REGISTER</th><th>VALUE</th></tr></thead>
     <tbody>
-      <tr><td>0x00</td><td>MCU_FAMILIES</td><td><span class="todo">[STM32, NXP, TI C2000, ...]</span></td></tr>
-      <tr><td>0x04</td><td>LANGUAGES</td><td><span class="todo">[C, C++, Python, ...]</span></td></tr>
-      <tr><td>0x08</td><td>RTOS</td><td><span class="todo">[FreeRTOS, Zephyr, ...]</span></td></tr>
-      <tr><td>0x0C</td><td>PROTOCOLS</td><td><span class="todo">[CAN, SPI, I2C, UART, ...]</span></td></tr>
-      <tr><td>0x10</td><td>MOTOR_CONTROL</td><td><span class="todo">[FOC, BLDC, PMSM, ...]</span></td></tr>
-      <tr><td>0x14</td><td>DEBUG_TEST</td><td><span class="todo">[Oscilloscope, logic analyzer, JTAG/SWD, HIL, ...]</span></td></tr>
-      <tr><td>0x18</td><td>TOOLCHAIN</td><td><span class="todo">[Git, CI, CMake, ...]</span></td></tr>
+      <tr><td>0x00</td><td>LANGUAGES</td><td>C, Embedded C, C++, Python, MATLAB, VHDL, Java, JavaScript, TypeScript, SQL</td></tr>
+      <tr><td>0x04</td><td>MCU</td><td>STM32 (ARM Cortex-M), bare-metal and HAL/LL firmware</td></tr>
+      <tr><td>0x08</td><td>RTOS</td><td>FreeRTOS (multithreaded micro-kernel), task scheduling and prioritisation</td></tr>
+      <tr><td>0x0C</td><td>PERIPHERALS</td><td>Interrupts, timers, PWM, ADC, DMA, GPIO</td></tr>
+      <tr><td>0x10</td><td>PROTOCOLS</td><td>I2C, SPI, UART, Bluetooth, USB-C PD, REST APIs</td></tr>
+      <tr><td>0x14</td><td>MOTOR_CONTROL</td><td>Stepper and servo, closed-loop control tuning</td></tr>
+      <tr><td>0x18</td><td>DEBUG_TEST</td><td>Oscilloscope, logic analyser, multimeter, SWD/JTAG, protocol analysis, unit testing, hardware bring-up</td></tr>
+      <tr><td>0x1C</td><td>TOOLCHAIN</td><td>Git, GitHub, STM32CubeIDE, STM32CubeMX, MATLAB/Simulink, Linux, Postman, Agile, code review</td></tr>
     </tbody>
   </table>
 </section>
@@ -153,10 +168,32 @@
   <h2><span class="mono pin">PIN 05</span> Education</h2>
   <ol class="log">
     <li>
-      <p class="mono when"><span class="todo">[YYYY to YYYY]</span></p>
+      <p class="mono when">Sep 2019 to Feb 2025</p>
       <div>
-        <h3><span class="todo">[Degree]</span>, <span class="todo">[University]</span></h3>
-        <p class="mono meta"><span class="todo">[Thesis or notable coursework, certifications]</span></p>
+        <h3>Integrated Master's in Electrical and Computer Engineering, University of Ioannina</h3>
+        <p class="mono meta">5-year Diploma | GPA 7.4 / 10 | Ranked 4th in class</p>
+        <ul>
+          <li>Thesis: USB-C Power Delivery negotiation firmware on the STM32G474.</li>
+          <li>Coursework: Embedded Systems, Digital Design (VHDL), Control Systems, Signals and Systems, Computer Architecture, Machine Learning.</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <p class="mono when">2026</p>
+      <div>
+        <h3>Certifications</h3>
+        <ul>
+          <li>IBM Generative AI Engineering (Jun 2026)</li>
+          <li>MathWorks Medical Image Processing (Apr 2026)</li>
+          <li>MathWorks Computer Vision Engineer (Mar 2026)</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <p class="mono when">Sep 2025 to Sep 2026</p>
+      <div>
+        <h3>Military service</h3>
+        <p class="mono meta">Completed</p>
       </div>
     </li>
   </ol>
@@ -168,8 +205,10 @@
   <h2><span class="mono pin">PIN 06</span> Contact</h2>
   <p class="big">Hiring for embedded, firmware, motor control or test? Write to me.</p>
   <p class="cta">
-    <a class="btn" href="mailto:stefatbc@gmail.com">stefatbc@gmail.com</a>
+    <a class="btn" href="mailto:stefanos.fotop@gmail.com">stefanos.fotop@gmail.com</a>
     <a class="btn ghost" href="https://www.linkedin.com/in/stefanos-fotopoulos-95192a290/" rel="noopener">LinkedIn</a>
+    <a class="btn ghost" href="https://github.com/stef-fot" rel="noopener">GitHub</a>
+    <a class="btn ghost" href="cv.pdf">Download CV (PDF)</a>
   </p>
 </section>
 </main>

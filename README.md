@@ -1,83 +1,77 @@
 # Stefanos Fotopoulos, portfolio
 
-Προσωπικό portfolio και CV σε μορφή ιστοσελίδας. Η ιδέα: ένα όμορφα τυπωμένο **datasheet** ηλεκτρονικού εξαρτήματος, όπου το εξάρτημα είμαι εγώ.
+Personal portfolio and CV as a website. The idea: a beautifully printed **datasheet** for an electronic component, where the component is me.
 
-Στατικό site (HTML, CSS, vanilla JavaScript). Χωρίς build, χωρίς dependencies.
+Static site (HTML, CSS, vanilla JavaScript). No build step, no dependencies.
 
 ![Hero, light theme](docs/hero-light.png)
 
-## Τι θα βρει κανείς στο site
+## What you will find on the site
 
-| Ενότητα | Τι περιέχει | Για ποιον είναι |
+| Section | Contents | Who it is for |
 |---|---|---|
-| **Hero** | Όνομα, μία πρόταση, κινούμενη κυματομορφή ταλαντωσκοπίου, κάρτα στοιχείων (ρόλος, τοποθεσία, χρόνια, διαθεσιμότητα, γλώσσες), κουμπιά email, LinkedIn και CV | HR: όλα τα βασικά σε 10 δευτερόλεπτα |
-| **PIN 01 Profile** | Σύντομο προφίλ και 3 μετρήσιμα επιτεύγματα | Και οι δύο |
-| **PIN 02 Experience** | Χρονολόγιο θέσεων με συγκεκριμένα αποτελέσματα | Engineering managers |
-| **PIN 03 Projects** | Κάρτες έργων (REF 03.x) με MCU, RTOS, πρωτόκολλα, εργαλεία και σύνδεσμο | Τεχνικοί reviewers |
-| **PIN 04 Skills** | Πίνακας σαν register map (offset, όνομα, τιμή) | Γρήγορη σάρωση δεξιοτήτων |
-| **PIN 05 Education** | Σπουδές και πιστοποιήσεις | HR |
-| **PIN 06 Contact** | Email και LinkedIn | Όλοι |
+| **Hero** | Name, one-line pitch, animated oscilloscope trace, fact sheet (role, stack, location, experience, availability, languages), buttons for email, LinkedIn, GitHub and CV | Recruiters: the essentials in 10 seconds |
+| **PIN 01 Profile** | Short profile and three measurable results | Everyone |
+| **PIN 02 Experience** | IQSoft Greece (Embedded Software Engineer) and Neunen (internship), with concrete numbers | Engineering managers |
+| **PIN 03 Projects** | USB-C Power Delivery Controller (STM32G474), Pioneer P3-DX trajectory control (ROS), Skyhop (Kotlin and Swift), each linked to its repository | Technical reviewers |
+| **PIN 04 Skills** | A register-map style table (offset, name, value) | Quick skim of the stack |
+| **PIN 05 Education** | Integrated Master's at the University of Ioannina, certifications, military service | Recruiters |
+| **PIN 06 Contact** | Email, LinkedIn, GitHub, CV download | Everyone |
 
-### Λεπτομέρειες που ανταμείβουν το δεύτερο βλέμμα
-- Κάθε ενότητα είναι ένα **pin** του datasheet και χωρίζεται από την επόμενη με **PCB trace** (γραμμή με pads).
-- Το hero έχει **οθόνη ταλαντωσκοπίου** με labels `CH1 1.00 V/DIV` και `1.00 MS/DIV`. Η κυματομορφή κινείται αργά και σταματά αν ο browser ζητά μειωμένη κίνηση.
-- Το `STATUS: AVAILABLE` έχει μικρή ένδειξη τύπου LED.
-- Οι δεξιότητες είναι γραμμένες ως καταχωρήσεις registers (`0x00 MCU_FAMILIES`).
+### Details that reward a closer look
+- Every section is a **pin** of the datasheet, separated by a **PCB trace** (a line with solder pads).
+- The hero has an **oscilloscope screen** with `CH1 1.00 V/DIV` and `1.00 MS/DIV` labels. The trace moves slowly and stops if the browser asks for reduced motion.
+- `STATUS: AVAILABLE` carries a small LED-style indicator.
+- Skills are written as register entries (`0x00 LANGUAGES`, `0x08 RTOS`).
+- A print stylesheet turns the page into a clean one-document CV.
 
-## Εμφάνιση
+## Look and feel
 
-Typography: **Fraunces** (χαρακτηριστικό serif) για τίτλους και κείμενο, **JetBrains Mono** για labels και τεχνικά στοιχεία. Ένα μόνο accent χρώμα, με φειδώ.
+Typography: **Fraunces** (a characterful serif) for headings and text, **JetBrains Mono** for labels and technical details. A single accent colour, used sparingly.
 
-| Light (χαρτί και πράσινο solder-mask) | Dark (γραφίτης και κιτρινοπράσινο scope) |
+| Light (paper and solder-mask green) | Dark (graphite and scope yellow-green) |
 |---|---|
 | ![Hero light](docs/hero-light.png) | ![Hero dark](docs/hero-dark.png) |
 
-Το θέμα ακολουθεί τις ρυθμίσεις του συστήματος και αλλάζει με το κουμπί `THEME` πάνω δεξιά.
+The theme follows the system setting and switches with the `THEME` button at the top right.
 
-### Ολόκληρη η σελίδα και mobile
+### Full page and mobile
 
 | Desktop | Mobile |
 |---|---|
 | ![Full page](docs/full-light.png) | ![Mobile](docs/mobile.png) |
 
-> Τα screenshots δείχνουν τα placeholders (πράσινο διακεκομμένο περίγραμμα). Θα αντικατασταθούν με το πραγματικό περιεχόμενο.
+## Run it locally
 
-## Πώς το τρέχεις τοπικά
+No installation needed. Two options:
 
-Δεν χρειάζεται εγκατάσταση. Δύο τρόποι:
+**1. Open the file.** Double-click `index.html`.
 
-**1. Άνοιγμα αρχείου.** Διπλό κλικ στο `index.html`.
-
-**2. Τοπικός server (προτείνεται).** Από τον φάκελο του project:
+**2. Local server (recommended).** From the project folder:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-και άνοιξε http://localhost:8000. Εναλλακτικά `npx serve`.
+then open http://localhost:8000. `npx serve` works too.
 
-Χρειάζεσαι internet μόνο για να φορτώσουν οι γραμματοσειρές από τα Google Fonts.
+You only need internet for the fonts, which load from Google Fonts.
 
-## Συμπλήρωση περιεχομένου
+## Editing the content
 
-Κάθε στοιχείο που λείπει είναι τυλιγμένο σε `<span class="todo">[...]</span>` μέσα στο `index.html`. Αντικατέστησε το κείμενο και αφαίρεσε την κλάση `todo`. Βρες τι έμεινε:
+All text lives in `index.html`, one section per `<section>`. Edit it directly. Replace `cv.pdf` with a newer export of the CV when needed.
 
-```bash
-grep -n 'class="todo"' index.html
-```
-
-Πρόσθεσε και ένα `cv.pdf` δίπλα στο `index.html` (το κουμπί "Download CV" δείχνει εκεί).
-
-## Δομή
+## Structure
 
 ```
-index.html   περιεχόμενο
-styles.css   θέματα, διάταξη, print
-main.js      εναλλαγή θέματος και κυματομορφή
-docs/        screenshots για αυτό το README
-.nojekyll    απενεργοποιεί το Jekyll στο GitHub Pages
+index.html   content
+styles.css   themes, layout, print
+main.js      theme toggle and oscilloscope trace
+cv.pdf       downloadable CV
+docs/        screenshots used in this README
+.nojekyll    disables Jekyll on GitHub Pages
 ```
 
-## Δημοσίευση (GitHub Pages)
+## Deploy (GitHub Pages)
 
-Settings, Pages, Deploy from a branch, `main` και `/ (root)`. Το site βγαίνει στο `https://stef-fot.github.io/portfolio/`.
+Settings, Pages, Deploy from a branch, `main` and `/ (root)`. The site is served at `https://stef-fot.github.io/portfolio/`.
