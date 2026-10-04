@@ -35,6 +35,12 @@ Typography: **Fraunces** (a characterful serif) for headings and text, **JetBrai
 
 The theme follows the system setting and switches with the `THEME` button at the top right.
 
+### Projects showcase
+
+The six repositories pinned on GitHub, each with its own description and a link.
+
+![Projects showcase](docs/projects.png)
+
 ### Full page and mobile
 
 | Desktop | Mobile |
